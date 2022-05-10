@@ -1,0 +1,100 @@
+.hero-header__container {
+    position: relative;
+}
+.hero {
+    font-family: "Titan One", sans-serif;
+}
+.hero__img-ice-cream {
+    position: absolute;
+    bottom: 0;
+    right: 34px;
+
+    @include mq(tablet) {
+        right: 303px;
+    }
+    @include mq(desktop) {
+        right: 408px;
+    }
+}
+
+.hero__img-girl {
+    display: none;
+
+    @include mq(tablet) {
+        display: block;
+        position: absolute;
+        bottom: 0;
+        right: 32px;
+    }
+
+    @include mq(desktop) {
+        right: 16px;
+    }
+    
+}
+
+.hero__title { 
+    margin-top: 136px;
+    margin-bottom: 20px;
+    width: 218px;
+
+    text-transform: uppercase;
+    font-size: 26px;
+    line-height: 1.15 ;
+    letter-spacing: 0.04em;
+    color: var(--primary-text-color);
+
+    @include mq(tablet) {
+        margin-top: 20px;
+    }
+}
+.title__akcent {
+    
+    font-size: 48px;
+    line-height: 0.97;
+    color: var(--akcent-text-color);
+}
+
+.hero__facts {
+    display: none;
+}
+.hero__dscr {
+    display: none;
+
+    @include mq(tablet) {
+        display: block;
+        width: 114px;
+
+        font-family: "DM Sans", sans-serif;
+        font-weight: 400;
+        font-size: 8px;
+        line-height: 1.5;
+        color: var(--primary-text-color);
+    }
+
+}
+
+.hero__title,
+.hero__btns {
+    position: relative;
+    top: 0;
+    left: 0;
+    z-index: 50;
+}
+    
+.hero__img-milk {
+    display: none;
+
+    @include mq(tablet) {
+        display: block;
+}
+    
+}
+.hero__milk-dscr-overlay {
+    display: flex;
+    position: absolute;
+    bottom: 16px;
+    left: 32px;
+
+    align-items: center;
+}
